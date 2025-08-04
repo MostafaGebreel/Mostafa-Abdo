@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #999;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1320px;
+    height: 80px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+      font-size:22px;
+        font-family: "macondo", sans-serif;
+        text-transform: capitalize;
+    }
+}
+nav img{
+    width: 50px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+        font-family: "Roboto", sans-serif;
+
+}
+nav ul a{
+    position: relative;
+    text-decoration: none;
+    color: #666;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-bottom: 1px #088f57 solid;
+}
+nav ul a:hover{
+   border: 1px #088f57 solid;
+   color: #088f57;
+   transition: 0.3s;
+}
+section{
+    width: 1320px;
+    height: 800px;
+    padding: 50px 50px;
+    display: flex;
+    gap: 10px;
+    font-family: "Afacad", sans-serif;
+}
+.words{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h1{
+        color: #088f57;
+        text-transform: capitalize;
+        line-height: 1;
+        font-weight: 700;
+        font-size: 120px;
+    }
+    p{
+        font-size: larger;
+    }
+    span{
+        color: #088f57;
+    }
+    img{
+        width: 50px;
+    }
+    a{
+        text-decoration: none;
+        padding: 10px 60px;
+        color: white;
+        background-color: #088f57;
+        width: 150px;
+    }
+    div{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+}
+.side img {
+    width: 200px;
+    height: 400px;
+}
+.side div{
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.slide{
+    position: relative;
+    transform-style:preserve-3d ;
+    transition: transform .3s;
+}
+.side:hover{
+    transform: rotateY('-180deg');
+}
